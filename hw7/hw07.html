@@ -1,0 +1,167 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact</title>
+<!--<link href="https://fonts.googleapis.com/css?family=Montserrat|Nanum+Gothic&display=swap" rel="stylesheet">-->
+
+<!--   GNB 메뉴 시작 -->
+    <link rel="stylesheet" href="./css/style.css">
+<!--   GNB 메뉴 시작 -->
+    <style>
+        h1{
+            color: darkgreen;
+            margin: 20px 0px;
+        }
+        h2 {
+            color: white;
+            margin: 20px 0px;
+            background-color: rgba(0, 100, 0, 0.6);
+            font-size: 36px;
+        }
+        strong, em{
+            color: orange;
+            margin-bottom: 20px;
+        }
+        #square { list-style-type: square; }
+        #circle{
+            list-style-type: circle;
+            color: ;
+        }
+        .circle {
+            margin-left: 20px;
+            padding-left: 10px;
+        }
+        .decimal {
+            list-style-type: decimal;
+            margin-left: 20px;
+            padding-left: 10px;
+        }
+        #content li{
+            background-color: #FFFFFF;
+            color: #000000;
+        }
+        #content a:hover {
+            background-color: lightgreen;
+            color: #000000;
+        }
+/*        테이블 */
+        table, tr, th, td {
+            border: solid 1px #ffd30d;
+            border-collapse: collapse;
+            padding: 20px;
+            font-family: 'Nanum Gothic', sans-serif;
+            font-weight: bold;
+            color: #000000;
+        }
+        #tbl_contact input[type='submit'] {
+            padding: 12px 17px;
+            color: #fff;
+            background: #fa6e3e;
+            border: 0;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            float: right;
+            display: inline-block;
+            width: 80px;            
+        }
+        #tbl_contact input[type='submit']:hover {
+            background: #d55427;
+            cursor: pointer;
+        }
+
+/*        contact 헤더 */
+        #txt_center {
+            font-size: 38px;
+            text-align: center;
+            background-color: rgba(224, 216, 52, 0.8);
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+<!--       GNB 메뉴 시작 -->
+        <div id="button">
+            <a href="../index.html"><img src="./img/Selfie.jpg" alt="셀카"></a>
+<!--            <a href="./index.html">본인아이디</a>-->
+            <p>YA 김현우</p>
+        </div>
+       <div id="nav">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+        <li><a href="../hw2/index2.html">HW02</a></li>
+        <li><a href="../hw3/product_introduce.html">HW03</a></li>
+        <li><a href="../hw4/pasta_recipe.html">HW04</a></li>
+        <li><a href="../hw5/practice-01-article.html">HW05</a></li>
+        <li><a href="../hw6/pr10-03-flex-onepage.html">HW06</a></li>
+        <li><a href="../hw7/hw07.html">HW07</a></li>
+        <li><a href="../hw8/hw08.html">HW08</a></li>
+        <li><a href="../hw9/game_introduce.html">게임소개</a></li>
+        <li><a href="../hw9/profile.html">Profile</a></li>
+            </ul>
+        </div>
+<!--       GNB 메뉴 끝 -->   
+  <div id="content">
+    <div class="contA">
+      <h1>안녕하세요 김현우입니다.</h1>
+      <p>저한테 연락하고자 하시는 분은 아래의 양식에 따라 메일을 주시면 됩니다. 연락처 뿐만 아니라 이름과 이메일 모두 <strong>본인</strong>의 정보를 입력해주시기를 바랍니다.</p> 
+    </div>
+    
+<!--    본문 시작 (Contact) -->    
+        <div class="contB">
+        <h2 id="txt_center">메시지 보내기</h2>   
+
+        <div id='tbl_contact'>
+         <form id='form_contact'>
+          <table border="3">
+             <tr>
+              <td> 이름 </td>
+              <td> <input type="text" name="writer" size="55"> </td>
+              <td> 연락처(본인)</td>
+              <td> <input type="password" name="pw"> </td>
+             </tr>
+             <tr>
+              <td> 이메일 </td>
+              <td> <input type="text" name="email" size="39"> @
+              <select>
+               <option> daum.net </option>
+               <option selected> gmail.com </option>
+               <option> naver.com </option>
+               <option> 직접입력 </option>
+              </select> </td>
+              <td> <img src="./img/lock.png" width="30" alt=""> </td>
+              <td> <input type="radio" name="protect" checked> 공개 
+                   <input type="radio" name="protect"> 비공개</td>
+             </tr>
+             <tr>
+              <td> 제목 </td>
+              <td colspan="4"> <input type="text" size="98"> </td>
+             </tr>
+             <tr>
+              <td> 메시지 </td>
+              <td colspan="4"> <textarea cols="100" rows="20"></textarea> </td>
+             </tr>
+          </table>
+          <div id="tbl_submit">
+              <input type="submit" value="보내기">
+          </div>     
+          </form>    
+        </div>
+      </div>
+  <!-- content -->
+   </div>   <!-- content -->  
+  <!--       footer 시작  -->
+       <div id="footer">
+          <div id="footer_copyright">
+            <p>
+                Copyright &copy <a href="hw07.html" class="site">Hyunwoo Kim</a> All rights reserved.
+            </p>
+            <span>EMAIL : rnflsdkemf@naver.com</span>
+          </div>
+       </div> <!-- footer -->
+<!--       footer 끝  -->  
+  </div>    <!-- wrapper -->
+  </body>
+</html>
